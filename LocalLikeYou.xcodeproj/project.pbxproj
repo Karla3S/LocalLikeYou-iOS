@@ -14,6 +14,10 @@
 		232C22062B212BA000BACE55 /* LocalLikeYouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232C22052B212BA000BACE55 /* LocalLikeYouTests.swift */; };
 		232C22102B212BA000BACE55 /* LocalLikeYouUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232C220F2B212BA000BACE55 /* LocalLikeYouUITests.swift */; };
 		232C22122B212BA000BACE55 /* LocalLikeYouUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232C22112B212BA000BACE55 /* LocalLikeYouUITestsLaunchTests.swift */; };
+		232C22282B212C5300BACE55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232C22272B212C5300BACE55 /* ViewController.swift */; };
+		232C222A2B212C7000BACE55 /* AnnouncementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232C22292B212C7000BACE55 /* AnnouncementView.swift */; };
+		232C22312B212DDC00BACE55 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232C222F2B212DDC00BACE55 /* Mapbox.framework */; };
+		232C22322B212DDC00BACE55 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232C22302B212DDC00BACE55 /* MapboxMobileEvents.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		232C22242B212C0000BACE55 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		232C21F12B212B9E00BACE55 /* LocalLikeYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalLikeYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		232C21F42B212B9E00BACE55 /* LocalLikeYouApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLikeYouApp.swift; sourceTree = "<group>"; };
@@ -44,6 +61,11 @@
 		232C220B2B212BA000BACE55 /* LocalLikeYouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalLikeYouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		232C220F2B212BA000BACE55 /* LocalLikeYouUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLikeYouUITests.swift; sourceTree = "<group>"; };
 		232C22112B212BA000BACE55 /* LocalLikeYouUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLikeYouUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		232C22272B212C5300BACE55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		232C22292B212C7000BACE55 /* AnnouncementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementView.swift; sourceTree = "<group>"; };
+		232C222F2B212DDC00BACE55 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		232C22302B212DDC00BACE55 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxMobileEvents.framework; sourceTree = "<group>"; };
+		232C22332B212E0F00BACE55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232C22322B212DDC00BACE55 /* MapboxMobileEvents.framework in Frameworks */,
+				232C22312B212DDC00BACE55 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +98,8 @@
 		232C21E82B212B9E00BACE55 = {
 			isa = PBXGroup;
 			children = (
+				232C222F2B212DDC00BACE55 /* Mapbox.framework */,
+				232C22302B212DDC00BACE55 /* MapboxMobileEvents.framework */,
 				232C21F32B212B9E00BACE55 /* LocalLikeYou */,
 				232C22042B212BA000BACE55 /* LocalLikeYouTests */,
 				232C220E2B212BA000BACE55 /* LocalLikeYouUITests */,
@@ -94,10 +120,13 @@
 		232C21F32B212B9E00BACE55 /* LocalLikeYou */ = {
 			isa = PBXGroup;
 			children = (
+				232C22332B212E0F00BACE55 /* Info.plist */,
 				232C21F42B212B9E00BACE55 /* LocalLikeYouApp.swift */,
 				232C21F62B212B9E00BACE55 /* ContentView.swift */,
 				232C21F82B212BA000BACE55 /* Assets.xcassets */,
 				232C21FA2B212BA000BACE55 /* Preview Content */,
+				232C22272B212C5300BACE55 /* ViewController.swift */,
+				232C22292B212C7000BACE55 /* AnnouncementView.swift */,
 			);
 			path = LocalLikeYou;
 			sourceTree = "<group>";
@@ -137,6 +166,7 @@
 				232C21ED2B212B9E00BACE55 /* Sources */,
 				232C21EE2B212B9E00BACE55 /* Frameworks */,
 				232C21EF2B212B9E00BACE55 /* Resources */,
+				232C22242B212C0000BACE55 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,8 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232C22282B212C5300BACE55 /* ViewController.swift in Sources */,
 				232C21F72B212B9E00BACE55 /* ContentView.swift in Sources */,
 				232C21F52B212B9E00BACE55 /* LocalLikeYouApp.swift in Sources */,
+				232C222A2B212C7000BACE55 /* AnnouncementView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +455,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LocalLikeYou/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LocalLikeYouUITests",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocalLikeYou/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,7 +489,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LocalLikeYou/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LocalLikeYouUITests",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocalLikeYou/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

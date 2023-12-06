@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoibG9jYWxsaWtleW91IiwiYSI6ImNsbzR6ZnNwbjA1bWMydm54bTVjMjhmcnYifQ.kSO2yU1mv-w1IIW-gmuQiA</string>
+</dict>
+</plist>
